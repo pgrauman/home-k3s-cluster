@@ -28,9 +28,12 @@ spec:
           - networking
       name: "you"
       customApps:
-        - name: Some External Cluster Service
-          url: http://192.168.1.100:5000
-          icon: test-tube
+        - name: PiHole
+          url: http://pi.hole/admin/
+          icon: pi-hole
+        - name: Synology
+          url: http://192.168.0.200:5000/
+          icon: nas
       groups:
         - name: Communicate
           links:
