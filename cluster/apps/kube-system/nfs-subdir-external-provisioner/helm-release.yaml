@@ -4,23 +4,23 @@ kind: HelmRelease
 metadata:
   name: nfs-subdir-external-provisioner
   namespace: kube-system
+  labels:
+    kustomize.toolkit.fluxcd.io/substitute: "disabled"
 spec:
   interval: 5m
   chart:
     spec:
       # renovate:
       chart: nfs-subdir-external-provisioner
-      version: "4.0.14"
+      version: 4.0.14
       sourceRef:
         kind: HelmRepository
         name: nfs-subdir-external-provisioner-charts
         namespace: flux-system
       interval: 5m
   values:
-    image:
-      repository: k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner
-      tag: v4.0.2
     storageClass:
+      defaultClass: false
       name: nfs-client
       reclaimPolicy: Retain
       pathPattern: "${.PVC.namespace}/${.PVC.name}"
