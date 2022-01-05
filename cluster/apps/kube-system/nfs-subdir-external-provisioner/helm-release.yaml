@@ -9,7 +9,7 @@ spec:
   chart:
     spec:
       # renovate:
-      chart: nfs-subdir-external-provisioner
+      chart: nfs-subdir-external-provisioner-charts
       version: "4.0.14"
       sourceRef:
         kind: HelmRepository
