@@ -1,3 +1,4 @@
+---
 ignore: |
   *.sops.*
   gotk-components.yaml
@@ -15,3 +16,5 @@ rules:
     min-spaces-inside: 0
     max-spaces-inside: 0
   indentation: enable
+  document-start:
+    ignore: kustomization.yaml
