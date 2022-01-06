@@ -9,6 +9,7 @@ spec:
   chart:
     spec:
       # renovate:
+      # renovate: registryUrl=https://k8s-at-home.com/charts/
       chart: miniflux
       version: 4.4.0
       sourceRef:
