@@ -44,5 +44,6 @@ spec:
         enabled: true
         storageClass: nfs-client
         size: 10Gi
-    nodeSelector:
-      kubernetes.io/arch: amd64
+      primary:
+        nodeSelector:
+          kubernetes.io/arch: amd64
