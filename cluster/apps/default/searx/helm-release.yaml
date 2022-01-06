@@ -16,13 +16,8 @@ spec:
         namespace: flux-system
       interval: 5m
   values:
-    env:
-      - name: SEARX_MORTY_KEY
-        valueFrom:
-          secretKeyRef:
-            name: searx-secrets
-            key: searx_morty_key
     searx:
+      existingSecret: searx-secrets
       baseUrl: "searx.${SECRET_DOMAIN}"
       mortyKey: "${SEARX_MORTY_KEY}"
     ingress:
