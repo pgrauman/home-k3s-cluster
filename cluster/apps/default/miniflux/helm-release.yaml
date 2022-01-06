@@ -18,8 +18,6 @@ spec:
         namespace: flux-system
       interval: 5m
   values:
-    nodeSelector:
-      beta.kubernetes.io/arch: amd64
     env:
       ADMIN_USERNAME: pgrauman
       TZ: "America/New_York"
@@ -46,3 +44,5 @@ spec:
         enabled: true
         storageClass: nfs-client
         size: 10Gi
+    nodeSelector:
+      kubernetes.io/arch: amd64
