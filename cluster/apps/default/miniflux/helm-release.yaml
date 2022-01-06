@@ -41,4 +41,5 @@ spec:
     postgresql:
       persistence:
         enabled: true
-        existingClaim: miniflux-db
+        storageClass: nfs-client
+        size: 10Gi
