@@ -26,7 +26,7 @@ spec:
             key: searx_morty_key
     searx:
       baseUrl: "searx.${SECRET_DOMAIN}"
-      mortyKey: "{SEARX_MORTY_KEY}"
+      mortyKey: "${SEARX_MORTY_KEY}"
     ingress:
       main:
         enabled: true
