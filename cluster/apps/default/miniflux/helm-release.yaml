@@ -18,6 +18,8 @@ spec:
         namespace: flux-system
       interval: 5m
   values:
+    nodeSelector:
+      beta.kubernetes.io/arch: amd64
     env:
       ADMIN_USERNAME: pgrauman
       TZ: "America/New_York"
