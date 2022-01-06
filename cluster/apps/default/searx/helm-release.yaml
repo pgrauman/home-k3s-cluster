@@ -17,8 +17,6 @@ spec:
       interval: 5m
   values:
     env:
-      - name: TZ
-        value: "America/New_York"
       - name: SEARX_MORTY_KEY
         valueFrom:
           secretKeyRef:
