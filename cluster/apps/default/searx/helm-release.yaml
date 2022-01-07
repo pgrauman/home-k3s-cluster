@@ -16,13 +16,12 @@ spec:
         namespace: flux-system
       interval: 5m
   values:
+    nodeSelector:
+      kubernetes.io/arch: amd64
     searx:
       existingSecret: searx-secrets
       baseUrl: "searx.${SECRET_DOMAIN}"
       mortyKey: "${SEARX_MORTY_KEY}"
-    filtron:
-      # change filtron container to one with arm64 build
-      repository: spcodes/filtron
     ingress:
       main:
         enabled: true
