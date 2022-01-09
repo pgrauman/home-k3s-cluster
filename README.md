@@ -35,9 +35,8 @@ See my [server/ansible](./server/ansible/) directory for my playbooks and roles,
 - [SOPS](https://toolkit.fluxcd.io/guides/mozilla-sops/): Encrypts secrets which is safe to store - even to a public repository.
 - [external-dns](https://github.com/kubernetes-sigs/external-dns): Creates DNS entries in a separate [coredns](https://github.com/coredns/coredns) deployment which is backed by my clusters [etcd](https://github.com/etcd-io/etcd) deployment.
 - [cert-manager](https://cert-manager.io/docs/): Configured to create TLS certs for all ingress services automatically using LetsEncrypt.
-- [kasten-k10](https://www.kasten.io): Provides disaster recovery via snapshots and out-of-band backups.
 
-(section taken from [toshobi's cluster repo](https://github.com/toboshii/home-cluster/), which has greatdescriptions)
+(section taken from [toshobi's cluster repo](https://github.com/toboshii/home-cluster/), which has great descriptions)
 
 ---
 
