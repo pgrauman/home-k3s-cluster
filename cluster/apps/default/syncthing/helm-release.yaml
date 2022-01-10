@@ -25,6 +25,8 @@ spec:
   values:
     nodeSelector:
       kubernetes.io/arch: arm64
+    podSecurityContext: 
+      fsGroup: 101
     image:
       tag: 1.18.5
       imagePullPolicy: Always
