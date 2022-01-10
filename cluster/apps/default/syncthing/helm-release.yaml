@@ -25,6 +25,9 @@ spec:
   values:
     nodeSelector:
       kubernetes.io/arch: arm64
+    image:
+      tag: 1.18.5
+      imagePullPolicy: Always
     ingress:
       main:
         enabled: true
