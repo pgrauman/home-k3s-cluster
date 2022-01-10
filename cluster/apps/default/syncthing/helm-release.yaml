@@ -23,6 +23,10 @@ spec:
     remediation:
       retries: 3
   values:
+    nodeSelector:
+      kubernetes.io/arch: arm64
+    image:
+      tag: "linux/arm/v7"
     ingress:
       main:
         enabled: true
