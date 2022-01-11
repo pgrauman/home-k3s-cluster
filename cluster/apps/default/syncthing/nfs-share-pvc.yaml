@@ -4,7 +4,7 @@ kind: PersistentVolume
 metadata:
   name: nfs-share-pv
 spec:
-  storageClassName: share-data
+  storageClassName: nfs-share-data
   capacity:
     storage: 10Gi
   accessModes:
@@ -28,7 +28,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteMany
-  storageClassName: share-data
+  storageClassName: nfs-share-data
   resources:
     requests:
       storage: 10Gi
