@@ -6,3 +6,4 @@ resources:
   - miniflux
   - searx
   - syncthing
+  - calibre-web
