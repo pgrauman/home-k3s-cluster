@@ -18,7 +18,7 @@ spec:
       interval: 5m
   values:
     podSecurityContext: 
-      runAsUser: 1026
+      # runAsUser: 1026
       runAsGroup: 100
       fsGroup: 100
     ingress:
