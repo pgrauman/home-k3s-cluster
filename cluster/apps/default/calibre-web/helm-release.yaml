@@ -19,7 +19,7 @@ spec:
   values:
     podSecurityContext: 
       # runAsUser: 1026
-      runAsGroup: 100
+      # runAsGroup: 100
       fsGroup: 100
     ingress:
       main:
