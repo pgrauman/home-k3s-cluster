@@ -18,8 +18,6 @@ spec:
       interval: 5m
   values:
     podSecurityContext: 
-      # runAsUser: 1026
-      # runAsGroup: 100
       fsGroup: 100
     ingress:
       main:
@@ -45,5 +43,5 @@ spec:
         size: 200Mi
         enabled: true
       books:
-        existingClaim: nfs-share-pvc
+        existingClaim: nfs-share-books-pvc
         enabled: true
