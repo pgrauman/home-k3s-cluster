@@ -18,9 +18,9 @@ spec:
       interval: 5m
   values:
     env:
-      - TZ: America/New_York
-      - PUID: 1026
-      - PGID: 100
+      TZ: America/New_York
+      PUID: "1026"
+      PGID: "100"
     podSecurityContext: 
       # runAsUser: 1026
       # runAsGroup: 100
