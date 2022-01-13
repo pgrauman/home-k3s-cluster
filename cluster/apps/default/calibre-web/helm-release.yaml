@@ -17,7 +17,13 @@ spec:
         namespace: flux-system
       interval: 5m
   values:
+    env:
+      - TZ: America/New_York
+      - PUID: 1026
+      - PGID: 100
     podSecurityContext: 
+      # runAsUser: 1026
+      # runAsGroup: 100
       fsGroup: 100
     ingress:
       main:
