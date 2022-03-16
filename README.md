@@ -31,7 +31,6 @@ See my [server/ansible](./server/ansible/) directory for my playbooks and roles,
 - [kube-vip](https://kube-vip.io/): Uses BGP to load balance the control-plane API, making it highly availible without requiring external HA proxy solutions.
 - [calico](https://docs.projectcalico.org/about/about-calico): For internal cluster networking using BGP.
 - [traefik](https://traefik.io/): Provides ingress cluster services.
-- [rook-ceph](https://rook.io/): Provides persistent volumes, allowing any application to consume RBD block storage from the underlying PVE cluster.
 - [SOPS](https://toolkit.fluxcd.io/guides/mozilla-sops/): Encrypts secrets which is safe to store - even to a public repository.
 - [external-dns](https://github.com/kubernetes-sigs/external-dns): Creates DNS entries in a separate [coredns](https://github.com/coredns/coredns) deployment which is backed by my clusters [etcd](https://github.com/etcd-io/etcd) deployment.
 - [cert-manager](https://cert-manager.io/docs/): Configured to create TLS certs for all ingress services automatically using LetsEncrypt.
