@@ -22,7 +22,7 @@ Based on the [k8s-at-home k3 template](https://github.com/k8s-at-home/template-c
 
 ## :sparkles:&nbsp; Cluster setup
 
-This cluster consists of VMs provisioned on [PVE](https://www.proxmox.com/en/proxmox-ve) via the [Terraform Proxmox provider](https://github.com/Telmate/terraform-provider-proxmox). These run [k3s](https://k3s.io/) provisioned overtop Ubuntu 20.10 using the [Ansible](https://www.ansible.com/) galaxy role [ansible-role-k3s](https://github.com/PyratLabs/ansible-role-k3s). This cluster is not hyper-converged as block storage is provided by the underlying PVE Ceph cluster using rook-ceph-external.
+This cluster consists of VMs provisioned on [PVE](https://www.proxmox.com/en/proxmox-ve) via the [Terraform Proxmox provider](https://github.com/Telmate/terraform-provider-proxmox). These run [k3s](https://k3s.io/) provisioned overtop Ubuntu 20.10 using the [Ansible](https://www.ansible.com/) galaxy role [ansible-role-k3s](https://github.com/PyratLabs/ansible-role-k3s). Data storage is provided from a NFS mount on the same network
 
 See my [server/ansible](./server/ansible/) directory for my playbooks and roles, and [server/terraform](./server/terraform) for infrastructure provisioning.
 
